@@ -59,7 +59,7 @@ const serverlessConfiguration: AWS = {
       ],
     },
   },
-  package: { individually: true },
+  package: { individually: false, include: ["./src/templates/**"] },
   custom: {
     esbuild: {
       bundle: true,
